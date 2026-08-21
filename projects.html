@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ongoing and past collaborative projects from Animation & Multimedia Club members.">
+  <title>Projects | Animation & Multimedia Club</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="projects">
+
+  <body data-page="team">
+  <nav class="navbar navbar-expand-lg navbar-dark club-navbar sticky-top">
+    <div class="container">
+      <<a class="navbar-brand d-flex align-items-center gap-2" href="homepage.html">
+        <img src="images/logo.jpeg" alt="Logo"
+          style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+        <span><strong>Animation &amp; Multimedia</strong><small class="d-block">Club</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="showcase.html">Showcase</a></li>
+                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="design.html">Design</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-accent btn-sm" href="joinClub.html">Join Club</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 reveal">
+            <span class="eyebrow">WORK · PROJECTS</span>
+            <h1 class="display-5 fw-bold mt-2">Student projects</h1>
+            <p class="lead mb-0">Bigger, longer-running collaborations members have built together — some still in progress, some wrapped and shipped.</p>
+          </div>
+          <div class="col-lg-4 reveal">
+            <div class="hero-art-card">
+              <i class="bi bi-people"></i>
+              <div>
+                <strong>Built together</strong>
+                <p class="mb-0">Every project here started as a small team pitch.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="event-filters d-flex flex-wrap gap-2 mb-4 reveal">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="ongoing" type="button">Ongoing</button>
+          <button class="filter-btn" data-filter="completed" type="button">Completed</button>
+          <button class="filter-btn" data-filter="collaborative" type="button">Collaborative</button>
+        </div>
+
+        <div class="project-grid reveal" id="projectsGrid">
+          <div class="project-card" data-category="ongoing collaborative">
+            <div class="project-media">
+              <span class="project-status status-ongoing">Ongoing</span>
+              <img src="https://picsum.photos/seed/project-1/700/450" alt="Short film production still">
+            </div>
+            <div class="project-body">
+              <h3>"Lone Ronin" Short Film</h3>
+              <p>A 3-minute character-driven short combining 2D concept art with a 3D animated sequence, in production for this year's showcase.</p>
+              <ul class="project-team">
+                <li>Seng Rui Zhe</li>
+                <li>Daniel Wong</li>
+                <li>Priya Nair</li>
+              </ul>
+              <a href="#" class="ma-text-link">View project <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="completed">
+            <div class="project-media">
+              <span class="project-status status-completed">Completed</span>
+              <img src="https://picsum.photos/seed/project-2/700/450" alt="Campus app interface mockup">
+            </div>
+            <div class="project-body">
+              <h3>Campus Event App Concept</h3>
+              <p>An end-to-end UI/UX case study for a student-facing event discovery app, presented at last semester's design critique.</p>
+              <ul class="project-team">
+                <li>Marcus Lee</li>
+                <li>Qi Kwang</li>
+              </ul>
+              <a href="#" class="ma-text-link">View project <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ongoing">
+            <div class="project-media">
+              <span class="project-status status-ongoing">Ongoing</span>
+              <img src="https://picsum.photos/seed/project-3/700/450" alt="3D environment render in progress">
+            </div>
+            <div class="project-body">
+              <h3>Rooftop Garden Diorama</h3>
+              <p>A hand-modeled 3D environment piece exploring lighting and mood, built across weekly Blender lab sessions.</p>
+              <ul class="project-team">
+                <li>Alicia Tan</li>
+              </ul>
+              <a href="#" class="ma-text-link">View project <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="completed collaborative">
+            <div class="project-media">
+              <span class="project-status status-completed">Completed</span>
+              <img src="https://picsum.photos/seed/project-4/700/450" alt="Club rebrand identity mockup">
+            </div>
+            <div class="project-body">
+              <h3>Club Rebrand Project</h3>
+              <p>A full visual identity refresh for the club — logo, color system and templates — now used across the site and socials.</p>
+              <ul class="project-team">
+                <li>Alicia Tan</li>
+                <li>Rui Zhe</li>
+                <li>Marcus Lee</li>
+              </ul>
+              <a href="#" class="ma-text-link">View project <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty-state mt-4 d-none" id="emptyState">
+          No projects in this category yet — check back soon.
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Animation & Multimedia Club</div>
+        <p class="footer-tagline">Cinematic animation, motion design, and multimedia production for students who want to
+          build real skills.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsOfService.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">© 2026 Animation &amp; Multimedia Club. All rights reserved.</p>
+      <div><a href="https://github.com" aria-label="GitHub"><i class="bi bi-github"></i></a><a
+          href="https://www.instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+          href="https://www.linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#projectsGrid .project-card');
+    const emptyState = document.getElementById('emptyState');
+
+    function applyFilter(filter) {
+      let visible = 0;
+      cards.forEach(card => {
+        const categories = card.dataset.category.split(' ');
+        const match = filter === 'all' || categories.includes(filter);
+        card.hidden = !match;
+        if (match) visible++;
+      });
+      emptyState.classList.toggle('d-none', visible !== 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter(btn.dataset.filter);
+      });
+    });
+  </script>
+</body>
+</html>

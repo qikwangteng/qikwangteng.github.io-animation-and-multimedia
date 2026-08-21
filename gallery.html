@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore 2D, 3D and video work created by Animation & Multimedia Club members.">
+  <title>Gallery | Animation & Multimedia Club</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="gallery">
+
+  <body data-page="team">
+  <nav class="navbar navbar-expand-lg navbar-dark club-navbar sticky-top">
+    <div class="container">
+      <<a class="navbar-brand d-flex align-items-center gap-2" href="homepage.html">
+        <img src="images/logo.jpeg" alt="Logo"
+          style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+        <span><strong>Animation &amp; Multimedia</strong><small class="d-block">Club</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="showcase.html">Showcase</a></li>
+                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="design.html">Design</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-accent btn-sm" href="joinClub.html">Join Club</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 reveal">
+            <span class="eyebrow">WORK · GALLERY</span>
+            <h1 class="display-5 fw-bold mt-2">Student gallery &amp; portfolio</h1>
+            <p class="lead mb-0">Explore 2D and 3D animation, short films and video work made by club members.</p>
+          </div>
+          <div class="col-lg-4 reveal">
+            <div class="hero-art-card">
+              <i class="bi bi-play-circle"></i>
+              <div>
+                <strong>Watch the work</strong>
+                <p class="mb-0">Click any thumbnail to preview the piece.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="event-filters d-flex flex-wrap gap-2 mb-4 reveal">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="2d" type="button">2D Animation</button>
+          <button class="filter-btn" data-filter="3d" type="button">3D Renders</button>
+          <button class="filter-btn" data-filter="video" type="button">Video / Short Film</button>
+        </div>
+
+        <div class="work-grid reveal" id="galleryGrid">
+          <div class="work-card" data-category="video">
+            <div class="work-media">
+              <span class="work-tag">Short Film</span>
+              <img src="https://img.youtube.com/vi/6UXjRCORV44/hqdefault.jpg" alt="Still from Cyberpunk Short video">
+              <a class="work-play" href="#" aria-label="Play Cyberpunk Short"><i class="bi bi-play-fill"></i></a>
+            </div>
+            <div class="work-body">
+              <h3>"Cyberpunk Short"</h3>
+              <p class="work-author">by Rui Zhe</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="2d">
+            <div class="work-media">
+              <span class="work-tag">2D Animation</span>
+              <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="Still from Walk Cycle Demo video">
+              <a class="work-play" href="#" aria-label="Play Walk Cycle Demo"><i class="bi bi-play-fill"></i></a>
+            </div>
+            <div class="work-body">
+              <h3>"Walk Cycle Demo"</h3>
+              <p class="work-author">by Qi Kwang</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="3d">
+            <div class="work-media">
+              <span class="work-tag">3D Render</span>
+              <img src="https://img.youtube.com/vi/6stlCkUDG_s/hqdefault.jpg" alt="Still from Timing & Spacing video">
+              <a class="work-play" href="#" aria-label="Play Timing and Spacing"><i class="bi bi-play-fill"></i></a>
+            </div>
+            <div class="work-body">
+              <h3>"Timing &amp; Spacing"</h3>
+              <p class="work-author">by Chi Foong</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="2d">
+            <div class="work-media">
+              <span class="work-tag">2D Animation</span>
+              <img src="https://img.youtube.com/vi/N9wsjroVlu8/hqdefault.jpg" alt="Still from Bouncing Ball Study video">
+              <a class="work-play" href="#" aria-label="Play Bouncing Ball Study"><i class="bi bi-play-fill"></i></a>
+            </div>
+            <div class="work-body">
+              <h3>"Bouncing Ball Study"</h3>
+              <p class="work-author">by Alicia Tan</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="3d">
+            <div class="work-media">
+              <span class="work-tag">3D Render</span>
+              <img src="https://img.youtube.com/vi/Cxs6TCFFV4E/hqdefault.jpg" alt="Still from Forge Keeper Turntable video">
+              <a class="work-play" href="#" aria-label="Play Forge Keeper Turntable"><i class="bi bi-play-fill"></i></a>
+            </div>
+            <div class="work-body">
+              <h3>"Forge Keeper — Turntable"</h3>
+              <p class="work-author">by Daniel Wong</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="video">
+            <div class="work-media">
+              <span class="work-tag">Short Film</span>
+              <img src="https://img.youtube.com/vi/3GwjfUFyY6M/hqdefault.jpg" alt="Still from Skybound Harbor video">
+              <a class="work-play" href="#" aria-label="Play Skybound Harbor"><i class="bi bi-play-fill"></i></a>
+            </div>
+            <div class="work-body">
+              <h3>"Skybound Harbor"</h3>
+              <p class="work-author">by Priya Nair</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty-state mt-4 d-none" id="emptyState">
+          No pieces in this category yet — check back soon.
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Animation & Multimedia Club</div>
+        <p class="footer-tagline">Cinematic animation, motion design, and multimedia production for students who want to
+          build real skills.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsOfService.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">© 2026 Animation &amp; Multimedia Club. All rights reserved.</p>
+      <div><a href="https://github.com" aria-label="GitHub"><i class="bi bi-github"></i></a><a
+          href="https://www.instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+          href="https://www.linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#galleryGrid .work-card');
+    const emptyState = document.getElementById('emptyState');
+
+    function applyFilter(filter) {
+      let visible = 0;
+      cards.forEach(card => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.hidden = !match;
+        if (match) visible++;
+      });
+      emptyState.classList.toggle('d-none', visible !== 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter(btn.dataset.filter);
+      });
+    });
+  </script>
+</body>
+</html>

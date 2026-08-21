@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create, learn, collaborate and showcase with the Animation & Multimedia Club.">
+  <meta name="theme-color" content="#092d40">
+  <title>Animation & Multimedia Club | Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="member-a-page" data-page="home">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+ <body data-page="team">
+  <nav class="navbar navbar-expand-lg navbar-dark club-navbar sticky-top">
+    <div class="container">
+      <<a class="navbar-brand d-flex align-items-center gap-2" href="homepage.html">
+        <img src="images/logo.jpeg" alt="Logo"
+          style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+        <span><strong>Animation &amp; Multimedia</strong><small class="d-block">Club</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="showcase.html">Showcase</a></li>
+                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="design.html">Design</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-accent btn-sm" href="joinClub.html">Join Club</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <header class="home-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy ma-reveal">
+          <span class="ma-eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Animation &amp; Multimedia
+            Club</span>
+          <h1>Ideas in motion.<br><span class="gradient-ink">Stories brought to life.</span></h1>
+          <p class="hero-lede">A student-led space to explore animation, digital art, video production, VFX, motion
+            graphics and multimedia storytelling—together.</p>
+          <div class="hero-actions">
+            <a class="btn ma-btn-primary" href="gallery.html">Explore Our Work <i class="bi bi-arrow-up-right"
+                aria-hidden="true"></i></a>
+            <a class="btn ma-btn-secondary" href="about.html">Discover the Club</a>
+          </div>
+          <ul class="hero-pill-list" aria-label="What the club offers">
+            <li><i class="bi bi-check2" aria-hidden="true"></i> Beginner-friendly</li>
+            <li><i class="bi bi-check2" aria-hidden="true"></i> Hands-on sessions</li>
+            <li><i class="bi bi-check2" aria-hidden="true"></i> Student showcases</li>
+          </ul>
+        </div>
+
+        <div class="showreel-shell ma-reveal" aria-label="Club showreel preview">
+          <div class="showreel-topbar">
+            <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span>SHOWREEL / 01</span>
+            <span>00:45</span>
+          </div>
+          <div class="showreel-stage" aria-hidden="true">
+            <div class="stage-grid"></div>
+            <div class="motion-orb motion-orb-one"></div>
+            <div class="motion-orb motion-orb-two"></div>
+            <div class="motion-frame motion-frame-one"><span>2D</span></div>
+            <div class="motion-frame motion-frame-two"><span>3D</span></div>
+            <div class="motion-title">MAKE<br>IT MOVE</div>
+          </div>
+          <button class="showreel-play" type="button" data-bs-toggle="modal" data-bs-target="#showreelModal"
+            aria-label="Open showreel preview">
+            <i class="bi bi-play-fill" aria-hidden="true"></i>
+          </button>
+          <div class="showreel-caption">
+            <div>
+              <span class="caption-label">MEMBER SHOWREEL</span>
+              <strong>Animation • VFX • Film</strong>
+            </div>
+            <span class="showreel-status"><span aria-hidden="true"></span> Preview</span>
+          </div>
+          <div class="showreel-progress" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="discipline-band" aria-label="Creative disciplines">
+      <div class="container discipline-list">
+        <span>Animation</span><i class="bi bi-asterisk" aria-hidden="true"></i>
+        <span>Digital Art</span><i class="bi bi-asterisk" aria-hidden="true"></i>
+        <span>Video &amp; VFX</span><i class="bi bi-asterisk" aria-hidden="true"></i>
+        <span>Motion Design</span><i class="bi bi-asterisk" aria-hidden="true"></i>
+        <span>Storytelling</span>
+      </div>
+    </section>
+
+    <section class="ma-section club-intro" aria-labelledby="intro-title">
+      <div class="container intro-grid">
+        <div class="intro-copy ma-reveal">
+          <span class="ma-eyebrow">Welcome to the club</span>
+          <h2 id="intro-title">A creative community built around making.</h2>
+          <p class="intro-lead">We bring curious students together to turn rough ideas into animated worlds, visual
+            experiments and stories worth sharing.</p>
+          <p>Members learn through practical workshops, collaborative projects and constructive feedback. Whether you
+            are opening Blender for the first time or polishing a final edit, there is room here to try, improve and
+            contribute.</p>
+          <a class="ma-text-link" href="about.html">Read Our Story <i class="bi bi-arrow-right"
+              aria-hidden="true"></i></a>
+        </div>
+
+        <div class="story-panel ma-reveal" aria-label="Club at a glance">
+          <div class="story-panel-heading">
+            <span>CREATIVE COMMUNITY</span>
+            <i class="bi bi-stars" aria-hidden="true"></i>
+          </div>
+          <div class="story-stat-grid">
+            <div class="story-stat">
+              <strong>2018</strong>
+              <span>Growing together since</span>
+            </div>
+            <div class="story-stat">
+              <strong>6+</strong>
+              <span>Creative disciplines</span>
+            </div>
+            <div class="story-stat story-stat-wide">
+              <strong>One shared studio mindset</strong>
+              <span>Learn the craft. Share the process. Celebrate the work.</span>
+            </div>
+          </div>
+          <div class="story-filmstrip" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ma-section quick-links-section" aria-labelledby="quick-links-title">
+      <div class="container">
+        <div class="section-heading-row ma-reveal">
+          <div>
+            <span class="ma-eyebrow">Start somewhere</span>
+            <h2 id="quick-links-title">Three ways into the club.</h2>
+          </div>
+          <p>Learn a technique, explore student work, or pick up a guide and begin at your own pace.</p>
+        </div>
+
+        <div class="quick-link-grid">
+          <a class="quick-link-card quick-link-learn ma-reveal" href="events.html">
+            <div class="quick-card-top">
+              <span class="quick-card-label">LEARN</span>
+              <span class="quick-card-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+            </div>
+            <div class="quick-card-visual quick-card-visual-learn" aria-hidden="true">
+              <span>25</span><small>AUG</small>
+              <div class="visual-lines"><i></i><i></i><i></i></div>
+            </div>
+            <h3>Latest Workshops</h3>
+            <p>Discover upcoming sessions in animation, Blender, VFX, design and production.</p>
+            <span class="quick-card-cta">View Events <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+          </a>
+
+          <a class="quick-link-card quick-link-create ma-reveal" href="gallery.html">
+            <div class="quick-card-top">
+              <span class="quick-card-label">CREATE</span>
+              <span class="quick-card-icon" aria-hidden="true"><i class="bi bi-collection-play"></i></span>
+            </div>
+            <div class="quick-card-visual quick-card-visual-create" aria-hidden="true">
+              <div class="gallery-frame frame-a"></div>
+              <div class="gallery-frame frame-b"></div>
+              <div class="gallery-frame frame-c"><i class="bi bi-play-fill"></i></div>
+            </div>
+            <h3>Student Showcase</h3>
+            <p>Explore animation, digital art, video and multimedia work created by club members.</p>
+            <span class="quick-card-cta">Explore Work <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+          </a>
+
+          <a class="quick-link-card quick-link-grow ma-reveal" href="resources.html">
+            <div class="quick-card-top">
+              <span class="quick-card-label">GROW</span>
+              <span class="quick-card-icon" aria-hidden="true"><i class="bi bi-journal-code"></i></span>
+            </div>
+            <div class="quick-card-visual quick-card-visual-grow" aria-hidden="true">
+              <span class="tool-chip">Blender</span>
+              <span class="tool-chip">After Effects</span>
+              <span class="tool-chip">Design</span>
+              <span class="tool-chip">Editing</span>
+            </div>
+            <h3>Learning Resources</h3>
+            <p>Start learning with beginner-friendly tools, guides and tutorials selected for creators.</p>
+            <span class="quick-card-cta">Access Guides <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ma-section final-cta-section">
+      <div class="container">
+        <div class="final-cta ma-reveal">
+          <div>
+            <span class="ma-eyebrow ma-eyebrow-light">Have an idea?</span>
+            <h2>Your next story needs a first frame.</h2>
+            <p>Meet collaborators, ask about membership, or propose a creative project.</p>
+          </div>
+          <a class="btn ma-btn-light" href="contact.html">Let’s Talk <i class="bi bi-arrow-up-right"
+              aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Animation & Multimedia Club</div>
+        <p class="footer-tagline">Cinematic animation, motion design, and multimedia production for students who want to
+          build real skills.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsOfService.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">© 2026 Animation &amp; Multimedia Club. All rights reserved.</p>
+      <div><a href="https://github.com" aria-label="GitHub"><i class="bi bi-github"></i></a><a
+          href="https://www.instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+          href="https://www.linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <div class="modal fade showreel-modal" id="showreelModal" tabindex="-1" aria-labelledby="showreelModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="ma-eyebrow">Club showreel</span>
+            <h2 class="modal-title fs-4 mt-1" id="showreelModalLabel">The next reel is rendering.</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="showreel-placeholder" role="img" aria-label="Animated showreel placeholder for future club video">
+            <div class="placeholder-mark"><i class="bi bi-camera-reels" aria-hidden="true"></i></div>
+            <p><strong>Member projects will play here.</strong><br>This preview is ready for a club-owned showreel when
+              the final video is available.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/member-a.js"></script>
+</body>
+
+</html>

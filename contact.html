@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Contact the Animation & Multimedia Club about membership, workshops and creative collaborations.">
+  <meta name="theme-color" content="#004066">
+  <title>Contact Us | Animation & Multimedia Club</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="member-a-page" data-page="contact">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark club-navbar sticky-top">
+    <div class="container">
+      <<a class="navbar-brand d-flex align-items-center gap-2" href="homepage.html">
+        <img src="images/logo.jpeg" alt="Logo"
+          style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+        <span><strong>Animation &amp; Multimedia</strong><small class="d-block">Club</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="showcase.html">Showcase</a></li>
+                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="design.html">Design</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-accent btn-sm" href="joinClub.html">Join Club</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <header class="contact-hero">
+      <div class="container contact-hero-grid">
+        <div class="ma-reveal">
+          <span class="ma-eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Contact</span>
+          <h1>Let’s create something together.</h1>
+          <p>Ask a question, join an activity, propose a collaboration or learn more about upcoming workshops. We would
+            love to hear what you are making.</p>
+        </div>
+        <div class="contact-hero-note ma-reveal" aria-label="Typical response information">
+          <i class="bi bi-chat-square-heart" aria-hidden="true"></i>
+          <div>
+            <span>STUDENT-LED, CREATOR-FOCUSED</span>
+            <strong>Questions are welcome at every skill level.</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="ma-section contact-main-section" aria-labelledby="contact-form-title">
+      <div class="container contact-layout">
+        <div class="contact-form-card ma-reveal">
+          <div class="form-card-heading">
+            <span class="ma-eyebrow">Send a message</span>
+            <h2 id="contact-form-title">Tell us what’s on your mind.</h2>
+            <p>Complete the form below. Required fields are marked with an asterisk.</p>
+          </div>
+
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="form-label" for="contactName">Name <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="text" id="contactName" name="name" autocomplete="name" minlength="2"
+                  required>
+                <div class="invalid-feedback">Please enter at least 2 characters.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="contactEmail">Email <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="email" id="contactEmail" name="email" autocomplete="email"
+                  inputmode="email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="contactTopic">Topic <span aria-hidden="true">*</span></label>
+                <select class="form-select" id="contactTopic" name="topic" required>
+                  <option value="" selected disabled>Select a topic</option>
+                  <option value="general">General Enquiry</option>
+                  <option value="membership">Membership</option>
+                  <option value="workshops">Workshops &amp; Events</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="showcase">Project / Showcase</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="invalid-feedback">Please choose a topic.</div>
+              </div>
+
+              <div class="col-12">
+                <div class="label-row">
+                  <label class="form-label" for="contactMessage">Message <span aria-hidden="true">*</span></label>
+                  <span id="messageCount" aria-live="polite">0 / 1000</span>
+                </div>
+                <textarea class="form-control" id="contactMessage" name="message" rows="6" minlength="15"
+                  maxlength="1000" aria-describedby="messageHelp" required></textarea>
+                <div id="messageHelp" class="form-text">Share at least 15 characters so we have enough context to help.
+                </div>
+                <div class="invalid-feedback">Please enter a message of at least 15 characters.</div>
+              </div>
+
+              <div class="col-12 form-submit-row">
+                <button class="btn ma-btn-primary" type="submit">Submit Message <i class="bi bi-send"
+                    aria-hidden="true"></i></button>
+                <p><i class="bi bi-info-circle" aria-hidden="true"></i> Demo form only—no message is sent to a server.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-details" aria-label="Club contact details">
+          <div class="contact-info-card ma-reveal">
+            <span class="contact-info-icon" aria-hidden="true"><i class="bi bi-envelope"></i></span>
+            <div>
+              <span class="contact-info-label">EMAIL</span>
+              <h2>Write to the club</h2>
+              <a href="mailto:animationmultimedia.club@utar.edu.my">animationmultimedia.club@utar.edu.my</a>
+              <p>For membership, workshops and collaboration enquiries.</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card ma-reveal">
+            <span class="contact-info-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+            <div>
+              <span class="contact-info-label">FIND US</span>
+              <h2>Multimedia Lab 2</h2>
+              <address>Faculty of Information and Communication Technology<br>Universiti Tunku Abdul Rahman</address>
+              <p>Club sessions follow the published event schedule.</p>
+            </div>
+          </div>
+
+          <div class="social-card ma-reveal">
+            <span class="contact-info-label">FOLLOW US</span>
+            <h2>See what we’re making.</h2>
+            <p>Follow project updates, works in progress and new workshop announcements.</p>
+            <div class="social-link-list">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><span><i
+                    class="bi bi-instagram" aria-hidden="true"></i> Instagram</span><i class="bi bi-arrow-up-right"
+                  aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><span><i
+                    class="bi bi-youtube" aria-hidden="true"></i> YouTube</span><i class="bi bi-arrow-up-right"
+                  aria-hidden="true"></i></a>
+              <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><span><i class="bi bi-discord"
+                    aria-hidden="true"></i> Discord</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Animation & Multimedia Club</div>
+        <p class="footer-tagline">Cinematic animation, motion design, and multimedia production for students who want to
+          build real skills.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsOfService.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">© 2026 Animation &amp; Multimedia Club. All rights reserved.</p>
+      <div><a href="https://github.com" aria-label="GitHub"><i class="bi bi-github"></i></a><a
+          href="https://www.instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+          href="https://www.linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast ma-toast" id="contactSuccessToast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast-header">
+        <i class="bi bi-check-circle-fill me-2" aria-hidden="true"></i>
+        <strong class="me-auto">Message validated</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="contactToastMessage">Your demo message is ready. No data was sent.</div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="member-a.js"></script>
+</body>
+
+</html>

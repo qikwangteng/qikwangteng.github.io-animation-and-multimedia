@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Poster, branding, UI/UX and character design work from Animation & Multimedia Club members.">
+  <title>Design | Animation & Multimedia Club</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="design">
+
+  <nav class="navbar navbar-expand-lg navbar-dark club-navbar sticky-top">
+    <div class="container">
+      <<a class="navbar-brand d-flex align-items-center gap-2" href="homepage.html">
+        <img src="images/logo.jpeg" alt="Logo"
+          style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+        <span><strong>Animation &amp; Multimedia</strong><small class="d-block">Club</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="showcase.html">Showcase</a></li>
+                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="design.html">Design</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-accent btn-sm" href="joinClub.html">Join Club</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 reveal">
+            <span class="eyebrow">WORK · DESIGN</span>
+            <h1 class="display-5 fw-bold mt-2">Student design showcase</h1>
+            <p class="lead mb-0">Posters, branding, UI/UX studies and character design created by club members.</p>
+          </div>
+          <div class="col-lg-4 reveal">
+            <div class="hero-art-card">
+              <i class="bi bi-palette"></i>
+              <div>
+                <strong>Design, made visible</strong>
+                <p class="mb-0">From first sketch to finished layout.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="event-filters d-flex flex-wrap gap-2 mb-4 reveal">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="poster" type="button">Poster &amp; Graphic</button>
+          <button class="filter-btn" data-filter="uiux" type="button">UI / UX</button>
+          <button class="filter-btn" data-filter="character" type="button">Character Design</button>
+          <button class="filter-btn" data-filter="branding" type="button">Branding</button>
+        </div>
+
+        <div class="work-grid reveal" id="designGrid">
+          <div class="work-card" data-category="poster">
+            <div class="work-media">
+              <span class="work-tag">Poster &amp; Graphic</span>
+              <img src="https://picsum.photos/seed/design-poster-1/600/450" alt="Event poster design">
+            </div>
+            <div class="work-body">
+              <h3>"Winter Showcase" Poster</h3>
+              <p class="work-author">by Priya Nair</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="uiux">
+            <div class="work-media">
+              <span class="work-tag">UI / UX</span>
+              <img src="https://picsum.photos/seed/design-uiux-1/600/450" alt="Mobile app UI design mockup">
+            </div>
+            <div class="work-body">
+              <h3>Campus Event App Concept</h3>
+              <p class="work-author">by Marcus Lee</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="character">
+            <div class="work-media">
+              <span class="work-tag">Character Design</span>
+              <img src="https://picsum.photos/seed/design-character-1/600/450" alt="Character design sheet">
+            </div>
+            <div class="work-body">
+              <h3>Lone Ronin — Character Sheet</h3>
+              <p class="work-author">by Seng Rui Zhe</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="branding">
+            <div class="work-media">
+              <span class="work-tag">Branding</span>
+              <img src="https://picsum.photos/seed/design-branding-1/600/450" alt="Brand identity mockup">
+            </div>
+            <div class="work-body">
+              <h3>Club Rebrand Concept</h3>
+              <p class="work-author">by Alicia Tan</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="poster">
+            <div class="work-media">
+              <span class="work-tag">Poster &amp; Graphic</span>
+              <img src="https://picsum.photos/seed/design-poster-2/600/450" alt="Workshop promo graphic">
+            </div>
+            <div class="work-body">
+              <h3>Blender Workshop Promo</h3>
+              <p class="work-author">by Daniel Wong</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="uiux">
+            <div class="work-media">
+              <span class="work-tag">UI / UX</span>
+              <img src="https://picsum.photos/seed/design-uiux-2/600/450" alt="Dashboard UI design mockup">
+            </div>
+            <div class="work-body">
+              <h3>Club Portal Dashboard</h3>
+              <p class="work-author">by Qi Kwang</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty-state mt-4 d-none" id="emptyState">
+          No pieces in this category yet — check back soon.
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Animation & Multimedia Club</div>
+        <p class="footer-tagline">Cinematic animation, motion design, and multimedia production for students who want to
+          build real skills.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsOfService.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">© 2026 Animation &amp; Multimedia Club. All rights reserved.</p>
+      <div><a href="https://github.com" aria-label="GitHub"><i class="bi bi-github"></i></a><a
+          href="https://www.instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+          href="https://www.linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#designGrid .work-card');
+    const emptyState = document.getElementById('emptyState');
+
+    function applyFilter(filter) {
+      let visible = 0;
+      cards.forEach(card => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.hidden = !match;
+        if (match) visible++;
+      });
+      emptyState.classList.toggle('d-none', visible !== 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter(btn.dataset.filter);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Join the Animation and Multimedia Club.">
+  <title>Join the Club | Animation & Multimedia Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark club-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="homepage.html">
+        <img src="images/logo.jpeg" alt="Logo"
+          style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+        <span><strong>Animation &amp; Multimedia</strong><small class="d-block">Club</small></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Work</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="showcase.html">Showcase</a></li>
+              <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+              <li><a class="dropdown-item" href="design.html">Design</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-accent btn-sm" href="joinClub.html">Join Club</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8"><span class="eyebrow">JOIN THE CLUB</span>
+            <h1 class="display-5 fw-bold mt-2">Create more with your community.</h1>
+            <p class="lead mb-0">Register your interest to join workshops, collaborate on projects, and grow your
+              animation and multimedia skills.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="hero-art-card"><i class="bi bi-people-fill"></i>
+              <div><strong>Open to all students</strong>
+                <p class="mb-0">Bring your curiosity and your best ideas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space">
+      <div class="container">
+        <form class="join-card needs-validation" id="joinForm" novalidate>
+          <div class="mb-4"><span class="eyebrow">MEMBERSHIP FORM</span>
+            <h2 class="h3 mt-2">Tell us about yourself</h2>
+            <p class="text-secondary mb-0">All fields are required unless marked optional.</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label" for="fullName">Full name</label><input class="form-control"
+                id="fullName" required placeholder="e.g. Alex Vance">
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6"><label class="form-label" for="email">Email address</label><input class="form-control"
+                type="email" id="email" required placeholder="you@example.com">
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="col-md-6"><label class="form-label" for="studentId">Student ID</label><input
+                class="form-control" id="studentId" required placeholder="e.g. 24ACB01234">
+              <div class="invalid-feedback">Please enter your student ID.</div>
+            </div>
+            <div class="col-md-6"><label class="form-label" for="contactNumber">Contact number</label><input
+                class="form-control" id="contactNumber" required placeholder="e.g. 011-1234567">
+              <div class="invalid-feedback">Please enter your contact number.</div>
+            </div>
+            <div class="col-md-6"><label class="form-label" for="gender">Gender</label><select class="form-select"
+                id="gender" required>
+                <option value="" selected disabled>Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Prefer not to say</option>
+              </select>
+              <div class="invalid-feedback">Please select an option.</div>
+            </div>
+            <div class="col-md-6"><label class="form-label" for="faculty">Faculty</label><select class="form-select"
+                id="faculty" required>
+                <option value="" selected disabled>Select faculty</option>
+                <option>Faculty of Accountancy and Management</option>
+                <option>Faculty of Arts and Social Sciences</option>
+                <option>Faculty of Creative Industries</option>
+                <option>Faculty of Education</option>
+                <option>Faculty of Engineering and Green Technology</option>
+                <option>Faculty of Information and Communication Technology</option>
+                <option>Faculty of Science</option>
+                <option>Faculty of Chinese Studies</option>
+                <option>Faculty of Engineering and Science</option>
+                <option>Faculty of Business and Finance</option>
+                <option>Centre for Foundation Studies</option>
+              </select>
+              <div class="invalid-feedback">Please select your faculty.</div>
+            </div>
+            <div class="col-md-6"><label class="form-label" for="course">Course</label><input class="form-control"
+                id="course" required placeholder="e.g. Bachelor of Multimedia">
+              <div class="invalid-feedback">Please enter your course.</div>
+            </div>
+            <div class="col-md-3"><label class="form-label" for="year">Year of study</label><select class="form-select"
+                id="year" required>
+                <option value="" selected disabled>Choose</option>
+                <option>Year 1</option>
+                <option>Year 2</option>
+                <option>Year 3</option>
+                <option>Year 4</option>
+              </select>
+              <div class="invalid-feedback">Required.</div>
+            </div>
+            <div class="col-md-3"><label class="form-label" for="semester">Semester</label><select class="form-select"
+                id="semester" required>
+                <option value="" selected disabled>Choose</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+              </select>
+              <div class="invalid-feedback">Required.</div>
+            </div>
+            <div class="col-12"><label class="form-label" for="interest">What would you like to explore? <span
+                  class="text-secondary fw-normal">(optional)</span></label><textarea class="form-control" id="interest"
+                rows="3" placeholder="Animation, 3D modelling, video editing, illustration..."></textarea></div>
+            <div class="col-12">
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="agree" required><label
+                  class="form-check-label" for="agree">I confirm that the information provided is accurate and I agree
+                  to be contacted about club activities.</label>
+                <div class="invalid-feedback">Please confirm before registering.</div>
+              </div>
+            </div>
+            <div class="col-12"><button class="btn btn-accent w-100 py-2" type="submit">Submit registration <i
+                  class="bi bi-arrow-right ms-1"></i></button></div>
+          </div>
+        </form>
+        <div class="success-panel" id="successPanel">
+          <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+          <h2>Registration received!</h2>
+          <p class="text-secondary">Thank you for joining the Animation &amp; Multimedia Club. We will be in touch soon.
+          </p><a class="btn btn-accent" href="team.html">Meet the team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Animation & Multimedia Club</div>
+        <p class="footer-tagline">Cinematic animation, motion design, and multimedia production for students who want to
+          build real skills.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsOfService.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">© 2026 Animation &amp; Multimedia Club. All rights reserved.</p>
+      <div><a href="https://github.com" aria-label="GitHub"><i class="bi bi-github"></i></a><a
+          href="https://www.instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+          href="https://www.linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/member-d.js"></script>
+  <script>
+    const form = document.getElementById('joinForm');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts';
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        event.stopPropagation();
+        form.classList.add('was-validated');
+        return;
+      }
+
+      const registration = {
+        name: fullName.value.trim(),
+        email: email.value.trim(),
+        studentId: studentId.value.trim(),
+        contactNumber: contactNumber.value.trim(),
+        gender: gender.value,
+        faculty: faculty.value,
+        course: course.value.trim(),
+        year: year.value,
+        semester: semester.value,
+        interest: interest.value.trim(),
+        submittedAt: new Date().toISOString()
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+
+      try {
+        const response = await fetch(API_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(registration)
+        });
+
+        if (!response.ok) {
+          throw new Error(`API request failed with status ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log('RESTful API response:', result);
+
+        form.style.display = 'none';
+        document.getElementById('successPanel').style.display = 'block';
+      } catch (error) {
+        console.error('Registration submission failed:', error);
+        alert('Something went wrong submitting your registration. Please try again.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Submit registration <i class="bi bi-arrow-right ms-1"></i>';
+      }
+    });
+  </script>
+</body>
+
+</html>

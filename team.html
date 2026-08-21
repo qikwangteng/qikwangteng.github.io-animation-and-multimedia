@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the team behind the Animation & Multimedia Club.">
+  <title>Team | Animation & Multimedia Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Image-specific rules for the member-card structure in style.css. */
+    .member-avatar.member-photo {
+      display: block;
+      object-fit: cover;
+    }
+
+    .member-card h3 {
+      margin-bottom: .35rem;
+    }
+  </style>
+</head>
+
+<body data-page="team">
+  <nav class="navbar navbar-expand-lg navbar-dark club-navbar sticky-top">
+    <div class="container">
+      <<a class="navbar-brand d-flex align-items-center gap-2" href="homepage.html">
+        <img src="images/logo.jpeg" alt="Logo"
+          style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+        <span><strong>Animation &amp; Multimedia</strong><small class="d-block">Club</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="showcase.html">Showcase</a></li>
+                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                <li><a class="dropdown-item" href="design.html">Design</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-accent btn-sm" href="joinClub.html">Join Club</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 reveal">
+            <span class="eyebrow">THE CREATIVE CORE</span>
+            <h1 class="display-5 fw-bold mt-2">Meet the people behind the pixels.</h1>
+            <p class="lead mb-0">We are a team of student creators who explore animation, multimedia, storytelling, and
+              the technical craft that brings ideas to life.</p>
+          </div>
+          <div class="col-lg-4 reveal">
+            <div class="hero-art-card"><i class="bi bi-stars"></i>
+              <div><strong>Made together</strong>
+                <p class="mb-0">Learn, create, and share your work with the club.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="section-heading text-center reveal">
+          <span class="eyebrow">OUR TEAM</span>
+          <h2>Creative minds, shared ambition.</h2>
+          <p class="mb-0">Get to know the members guiding our projects, workshops, and creative direction.</p>
+        </div>
+
+        <div class="member-scroll-wrapper reveal">
+
+          <div class="member-scroll" id="teamMembers" aria-label="Team members">
+            <article class="member-slide">
+              <div class="member-card"><img class="member-avatar member-photo" src="images/Team/Seng Rui Zhe.png"
+                  alt="Seng Rui Zhe">
+                <h3>Seng Rui Zhe</h3>
+                <p class="member-role">Creative Director</p>
+                <div class="member-tags"><span>Concept</span><span>Direction</span></div>
+                <p></p>
+                <p>Leads the club’s creative vision, guides project concepts, and ensures each production has a clear
+                  and engaging visual direction. </p>
+              </div>
+            </article>
+
+            <article class="member-slide">
+              <div class="member-card"><img class="member-avatar member-photo" src="images/Team/Teng Qi Kwang.jpeg"
+                  alt="Marcus Chen">
+                <h3>Marcus Chen</h3>
+                <p class="member-role">Lead Animator</p>
+                <div class="member-tags"><span>Animation</span><span>Motion</span></div>
+                <p></p>
+                <p>Oversees animation work, supports members with movement and timing techniques, and helps bring
+                  characters and scenes to life. </p>
+              </div>
+            </article>
+
+            <article class="member-slide">
+              <div class="member-card"><img class="member-avatar member-photo" src="images/Team/Teoh Jia Wei.jpeg"
+                  alt="Teoh Jia Wei">
+                <h3>Teoh Jia Wei</h3>
+                <p class="member-role">Technical Director</p>
+                <div class="member-tags"><span>Pipeline</span><span>Tools</span></div>
+                <p></p>
+                <p>Manages the technical workflow, tools, and production pipeline to make sure projects run smoothly
+                  from idea to final output.</p>
+              </div>
+            </article>
+            <article class="member-slide">
+              <div class="member-card"><img class="member-avatar member-photo" src="images/Team/Kow Chi Fhong.png"
+                  alt="Kow Chi Fhong">
+                <h3>Kow Chi Fhong</h3>
+                <p class="member-role">Environment Artist</p>
+                <div class="member-tags"><span>3D Art</span><span>Worlds</span></div>
+                <p></p>
+                <p>Creates backgrounds, settings, and 3D environments that give projects atmosphere, depth, and visual
+                  storytelling.</p>
+              </div>
+            </article>
+
+          </div>
+    </section>
+
+    <section class="section-space section-soft">
+      <div class="container">
+        <div class="mission-card reveal">
+          <div class="mission-icon"><i class="bi bi-lightbulb"></i></div>
+          <div><span class="eyebrow">JOIN THE CLUB</span>
+            <h2>Have an idea worth making?</h2>
+            <p class="mb-3">Whether you animate, illustrate, edit, code, or simply want to learn, there is a place for
+              you in our next project.</p><a class="btn btn-accent" href="joinClub.html">Join the club <i
+                class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Animation & Multimedia Club</div>
+        <p class="footer-tagline">Cinematic animation, motion design, and multimedia production for students who want to
+          build real skills.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsOfService.html">Terms of Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">© 2026 Animation &amp; Multimedia Club. All rights reserved.</p>
+      <div><a href="https://github.com" aria-label="GitHub"><i class="bi bi-github"></i></a><a
+          href="https://www.instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a
+          href="https://www.linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const memberScroll = document.getElementById("teamMembers");
+    const scrollAmount = () => memberScroll.clientWidth * 0.82;
+
+
+    const revealObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (entry.isIntersecting) { entry.target.classList.add("visible"); revealObserver.unobserve(entry.target); }
+    }), { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+  </script>
+</body>
+
+</html>
