@@ -256,7 +256,7 @@
         console.log('RESTful API response:', result);
 
         form.style.display = 'none';
-        document.getElementById('successPanel').style.display = 'block';
+        document.getElementById('successPanel').classList.add('is-visible');
       } catch (error) {
         console.error('Registration submission failed:', error);
         alert('Something went wrong submitting your registration. Please try again.');
