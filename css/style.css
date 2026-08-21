@@ -2195,6 +2195,14 @@ footer a[aria-label]:hover {
   margin-right: 0.25rem;
 }
 
+#successPanel {
+  display: none;
+}
+
+#successPanel.is-visible {
+  display: block;
+}
+
 .contact-details {
   display: grid;
   gap: 1rem;
