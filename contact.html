@@ -252,6 +252,15 @@
 
       const draftStatus = document.getElementById("draftStatus");
       const clearDraftBtn = document.getElementById("clearDraftBtn");
+      const message = document.getElementById("contactMessage");
+      const messageCount = document.getElementById("messageCount");
+
+      function updateMessageCount() {
+        if (message && messageCount) {
+          messageCount.textContent =
+          message.value.length + " / " + message.maxLength;
+        }
+      }
 
       function saveDraft() {
         const draft = {};
@@ -294,12 +303,8 @@
           }
 
           /* Update the existing character counter after restoring the message. */
-          const message = document.getElementById("contactMessage");
-          const messageCount = document.getElementById("messageCount");
-
-          if (message && messageCount) {
-            messageCount.textContent = message.value.length + " / " + message.maxLength;
-          }
+          updateMessageCount();
+          
         } catch (error) {
           console.error("Could not restore contact form draft:", error);
           sessionStorage.removeItem(DRAFT_KEY);
@@ -333,9 +338,15 @@
 
         fieldIds.forEach(function (id) {
           const field = document.getElementById(id);
-
           if (field) {
-            field.addEventListener("input", saveDraft);
+            field.addEventListener("input", function () {
+            saveDraft();
+
+            if (id === "contactMessage") {
+              updateMessageCount();
+              }
+            });
+
             field.addEventListener("change", saveDraft);
           }
         });
@@ -344,7 +355,7 @@
           clearDraftBtn.addEventListener("click", clearDraft);
         }
       });
-    })();
+      })();
   </script>
 
 </body>
